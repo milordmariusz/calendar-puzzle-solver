@@ -1,4 +1,4 @@
-# Calendarium Puzzle Solver
+# Callendarium Puzzle Solver
 
 A Streamlit-based application designed to solve date-matching grid puzzles using a recursive backtracking algorithm.
 

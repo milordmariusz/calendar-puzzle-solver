@@ -2,7 +2,7 @@
 set -e
 
 if [ ! -d "venv" ]; then
-    echo "[1/2] Tworzenie venv i instalacja pakietów..."
+    echo "[1/2] Creating virtual environment and installing packages..."
     python3 -m venv venv
     source venv/bin/activate
     pip install --upgrade pip --quiet
@@ -11,5 +11,5 @@ else
     source venv/bin/activate
 fi
 
-echo "[2/2] Uruchamianie aplikacji..."
+echo "[2/2] Starting the application..."
 streamlit run app.py

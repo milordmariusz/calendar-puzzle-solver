@@ -1,6 +1,6 @@
 @echo off
 if not exist "venv" (
-    echo [1/2] Tworzenie venv i instalacja pakietow...
+    echo [1/2] Creating virtual environment and installing packages...
     python -m venv venv
     call venv\Scripts\activate.bat
     python -m pip install --upgrade pip >nul 2>&1
@@ -9,6 +9,6 @@ if not exist "venv" (
     call venv\Scripts\activate.bat
 )
 
-echo [2/2] Uruchamianie aplikacji...
+echo [2/2] Starting the application...
 streamlit run app.py
 pause
